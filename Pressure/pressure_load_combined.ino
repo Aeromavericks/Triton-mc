@@ -78,8 +78,8 @@ void loop(){
     sens_3_val = map(sens_3_val,102,1023,0,150);    
 
 char buffer[70];
-sprintf(buffer,"P, %d, %d, %d, %d, %d, %d, %d, %.2d, %d, %d ",sens_1_val, sens_2_val, sens_3_val, sens_4_val, sens_5_val, sens_6_val);
+sprintf(buffer,"P,%d,%d,%d,%d,%d,%d,%d,%.2d,%d,%d",sens_1_val, sens_2_val, sens_3_val, sens_4_val, sens_5_val, sens_6_val);
     Serial.println(buffer);
     
     delay(50);
-}
+
